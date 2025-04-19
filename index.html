@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globle Services Pvt. Ltd.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- AOS Library CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Globle</h1>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" data-aos="fade-up">
+        <h2>Welcome to Globle</h2>
+        <p>Showcasing the work and skills of a passionate Full Stack Developer.</p>
+    </section>
+
+    <section class="services" data-aos="fade-up">
+        <h2>What I Do</h2>
+        <div class="service-card">
+            <h3>Frontend Development</h3>
+            <p>Responsive and interactive user interfaces using HTML, CSS, JavaScript, and modern frameworks.</p>
+        </div>
+        <div class="service-card">
+            <h3>Backend Development</h3>
+            <p>Secure and scalable backend solutions using PHP and MySQL.</p>
+        </div>
+        <div class="service-card">
+            <h3>Full Stack Solutions</h3>
+            <p>From database design to user experience — complete web solutions delivered efficiently.</p>
+        </div>
+    </section>
+
+    <section class="testimonials" data-aos="fade-up">
+        <h2>What Clients Say</h2>
+        <blockquote>
+            “Working with Globle was an amazing experience. Very professional and delivered the project on time!”
+            <cite>— Client A</cite>
+        </blockquote>
+        <blockquote>
+            “Great attention to detail and clean code. I would definitely work again on future projects.”
+            <cite>— Client B</cite>
+        </blockquote>
+    </section>
+
+    <section class="cta" data-aos="fade-up">
+        <h2>Have a project in mind?</h2>
+        <p>Let’s connect and make something awesome together.</p>
+        <a href="contact.html" class="cta-button">Contact Me</a>
+        <section class="resume">
+            <h2>Resume</h2>
+            <p>You can download or view my resume here:</p>
+            <a href="assets/resume.pdf" target="_blank" class="cta-button">Download Resume</a>
+        </section>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Globle Services Pvt. Ltd.</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" title="Back to Top">↑</button>
+
+<script>
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      scrollToTopBtn.style.display = "flex";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  };
+
+  scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+<!-- AOS Library JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true,
+  });
+</script>
+
+</body>
+</html>
